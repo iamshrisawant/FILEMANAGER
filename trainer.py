@@ -1,0 +1,3 @@
+class Trainer:
+    def __init__(self, store: PersistentStore, classifier: ClassifierEngine, interval_secs: int): ...
+    def run(self) -> None:  # loop: sleep → collect feedback → partial_fit → persist model
